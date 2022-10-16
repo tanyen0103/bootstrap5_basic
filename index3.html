@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  
+   .mycolor {
+       color: #5c0bb1;
+    }
+  </style>
+</head>
+<body>
+
+	<div class="bg-primary text-white text-center">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+			  <div class="carousel-item active">
+			  <img src="hinhnen1.jpg" class="d-block w-100" height="400" alt="...">
+			  <div class="carousel-caption d-none d-md-block">
+				  <h5>FIRST SLIDE</h5>
+				  <p>Bootstrap 5 presented by group 1.</p>
+			  </div>
+			  </div>
+			  <div class="carousel-item">
+			  <img src="bgslide_2.jpg" class="d-block w-100" height="400" alt="...">
+			  <div class="carousel-caption d-none d-md-block">
+				  <h5>SECOND SLIDE</h5>
+				  <p>Bootstrap 5 presented by group 1.</p>
+			  </div>
+			  </div>
+			  <div class="carousel-item">
+			  <img src="bgslide_3.jpg" class="d-block w-100" height="400" alt="...">
+			  <div class="carousel-caption d-none d-md-block">
+				  <h5>THIRD SLIDE</h5>
+				  <p>Bootstrap 5 presented by group 1.</p>
+			  </div>
+			  </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+		  </button>
+	  </div>
+  </div>
+
+	<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	  <div class="container-fluid collapse navbar-collapse">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" href="#">Active</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Dropdown
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			  </ul>
+			</li>
+		  <li class="nav-item">
+			<a class="nav-link disabled" href="#">Disabled</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav> -->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Logo</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="text" placeholder="Search">
+					<button class="btn btn-primary" type="button">Search</button>
+				</form>
+		  	</div>
+		</div>
+	</nav>
+
+	<div class="container mt-5">
+	  <div class="row">
+		<!-- <div class="col-sm-4">
+			<h2 class="mycolor">About Me </h2>
+			<div class="overflow-auto" style="height: 350px">
+					<h5>Photo of me:</h5>
+					<div class="fakeimg">Fake Image</div>
+					<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+					<h5>Photo of me:</h5>
+					<div class="fakeimg">Fake Image</div>
+					<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+					<h5>Photo of me:</h5>
+					<div class="fakeimg">Fake Image</div>
+					<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+					<h5>Photo of me:</h5>
+					<div class="fakeimg">Fake Image</div>
+					<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+			</div>
+			
+			<h3 class="mt-4 mycolor">Some Links</h3>
+			<p>Lorem ipsum dolor sit ame.</p>
+			<ul class="nav nav-pills flex-column">
+				<li class="nav-item">
+				<a class="nav-link active bg-dark" href="#">Active</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link text-dark" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link text-dark" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			<hr class="d-sm-none">
+		</div> -->
+		<div class="col-sm-12">
+			<h2 class="mycolor">Inline text elements</h2>
+			<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+			<p><del>This line of text is meant to be treated as deleted text.</del></p>
+			<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+			<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+			<p><u>This line of text will render as underlined.</u></p>
+			<p><small>This line of text is meant to be treated as fine print.</small></p>
+			<p><strong>This line rendered as bold text.</strong></p>
+			<p><em>This line rendered as italicized text.</em></p>
+			<br>
+			<h2 class="mycolor">Blockquotes</h2>
+			<figure>
+				<blockquote class="blockquote">
+					<p>A well-known quote, contained in a blockquote element.</p>
+				</blockquote>
+				<figcaption class="blockquote-footer">
+					Someone famous in <cite title="Source Title">Source Title</cite>
+				</figcaption>
+			</figure>
+			<br>
+			<h2 class="mycolor">Description list alignment</h2>
+			<dl class="row">
+			<dt class="col-sm-3">Description lists</dt>
+			<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+			<dt class="col-sm-3">Term</dt>
+			<dd class="col-sm-9">
+				<p>Definition for the term.</p>
+				<p>And some more placeholder definition text.</p>
+			</dd>
+
+			<dt class="col-sm-3">Another term</dt>
+			<dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+			<dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+			<dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+			<dt class="col-sm-3">Nesting</dt>
+			<dd class="col-sm-9">
+				<dl class="row">
+				<dt class="col-sm-4">Nested definition list</dt>
+				<dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+				</dl>
+			</dd>
+			</dl>
+			<br>
+			<a href="test.html" class="link-info" target="_blank">Trang html thông thường</a>
+			<br>
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					
+					<li class="page-item"><a class="page-link" href="index2.html">Previous</a></li>
+					<li class="page-item"><a class="page-link" href="index.html">1</a></li>
+					<li class="page-item"><a class="page-link" href="index2.html">2</a></li>
+					<li class="page-item"><a class="page-link" href="index3.html">3</a></li>
+					<li class="page-item disabled">
+					<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	  </div>
+	</div>
+
+	<!--<div class="mt-5 p-4 bg-dark text-white text-center">-->
+	  <footer class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.8);">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-facebook"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-instagram"></i
+      ></a>
+
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-light" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+<script language="javascript">
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+</html>
